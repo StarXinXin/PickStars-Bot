@@ -1,0 +1,6 @@
+qq-botpy
+bs4~=0.0.1
+
+qqbot~=2.3.11
+requests~=2.31.0
+beautifulsoup4~=4.12.2
