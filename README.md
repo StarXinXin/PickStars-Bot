@@ -1,6 +1,6 @@
 <div align="center">
 
-![botpy](https://socialify.git.ci/StarXinXin/PickStars-Bot/image?description=1&forks=1&issues=1&language=1&logo=https%3A%2F%2Fvip.helloimg.com%2Fi%2F2023%2F11%2F24%2F6560b3298b7e0.png&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Light)
+![PickStars-Bot](https://socialify.git.ci/StarXinXin/PickStars-Bot/image?description=1&forks=1&issues=1&language=1&logo=https%3A%2F%2Fvip.helloimg.com%2Fimages%2F2023%2F11%2F24%2Fo0A0NK.png&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Light)
 [![Language](https://img.shields.io/badge/language-python-green.svg?style=plastic)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-orange.svg?style=plastic)](https://github.com/StarXinXin/PickStars-Bot/blob/master/LICENSE)
 ![Python](https://img.shields.io/badge/python-3.12+-blue)
@@ -31,6 +31,15 @@ _✨ 摘星辰 QQ频道机器人 ✨_
 py包的依赖配置，通过`pip install -r requirements.txt` 可以安装所有的依赖包
 
 ### 运行机器人
+
+在QQ开放平台获取到
+
+```shell
+appid: ""
+token: ""
+```
+内容后填入文件 config.example.yaml
+并将文件名改为：config.yaml
 
 在代码库根目录执行下面命令
 
