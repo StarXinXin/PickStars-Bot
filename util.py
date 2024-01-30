@@ -5,7 +5,7 @@ import aiohttp
 
 
 def get_menu():
-    return "摘星辰 智能QQ频道机器人为你服务~\n已有功能：————————\n/天气查询   正常"
+    return "摘星辰 智能QQ频道机器人为你服务~\n已有功能：————————\n/天气查询   正常\n/随机一言   正常"
 
 
 def errorweather():
@@ -37,10 +37,13 @@ async def get_weather_data(location: str) -> str:
 async def get_hitokoto_data():
     async with aiohttp.ClientSession() as session:
         async with session.get("https://v1.hitokoto.cn/") as response:
+            if response.content_type == "application/json":
 
-            # print(response)
-            data = await response.json()
-            hitokoto = data["hitokoto"]
-            from_where = data["from"]
-            from_who = data["from_who"]
-            return f"{hitokoto}\n来自：{from_where} - {from_who}"
+                # print(response)
+                data = await response.json()
+                hitokoto = data["hitokoto"]
+                from_where = data["from"]
+                from_who = data["from_who"]
+                return f"{hitokoto}\n来自：{from_where} - {from_who}"
+            else:
+                return "错误-响应数据未知"
